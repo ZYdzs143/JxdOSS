@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    用于引入外部的属性文件-->
+    <properties resource="datasource.properties"/>
+
+    <settings>
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+<!--        开启驼峰命名映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+<!--    设置别名-->
+    <typeAliases>
+        <typeAlias type="com.jxd.eduSys.model.Student" alias="Student"/>
+        <typeAlias type="com.jxd.eduSys.model.College" alias="College"/>
+        <typeAlias type="com.jxd.eduSys.model.Course" alias="Course"/>
+        <typeAlias type="com.jxd.eduSys.model.SelectedCourse" alias="SelectedCourse"/>
+        <typeAlias type="com.jxd.eduSys.model.Teacher" alias="Teacher"/>
+        <typeAlias type="com.jxd.eduSys.model.UserLogin" alias="UserLogin"/>
+        <typeAlias type="com.jxd.eduSys.vo.CourseWithGrade" alias="CourseWithGrade"/>
+        <typeAlias type="com.jxd.eduSys.vo.CourseWithTchName" alias="CourseWithTchName"/>
+        <typeAlias type="com.jxd.eduSys.vo.SelCourseWithStuName" alias="SelCourseWithStuName"/>
+        <typeAlias type="com.jxd.eduSys.vo.StuWithCollege" alias="StuWithCollege"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <!--事务管理采用JDBC方式-->
+            <transactionManager type="JDBC"/>
+            <!--配置连接池方式的数据源-->
+            <dataSource type="POOLED">
+                <!--根据数据库连接四大参数创建连接放入连接池-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--注册mapper映射文件-->
+    <mappers>
+        <mapper resource="mappers/StuMapper.xml"/>
+        <mapper resource="mappers/CollegeMapper.xml"/>
+        <mapper resource="mappers/CourseMapper.xml"/>
+        <mapper resource="mappers/SelCourseMapper.xml"/>
+        <mapper resource="mappers/UserLoginMapper.xml"/>
+
+    </mappers>
+
+</configuration>
