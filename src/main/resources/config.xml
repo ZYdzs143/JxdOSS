@@ -16,16 +16,16 @@
 
 <!--    设置别名-->
     <typeAliases>
-<!--        <typeAlias type="com.jxd.eduSys.model.Student" alias="Student"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.model.College" alias="College"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.model.Course" alias="Course"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.model.SelectedCourse" alias="SelectedCourse"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.model.Teacher" alias="Teacher"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.model.UserLogin" alias="UserLogin"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.vo.CourseWithGrade" alias="CourseWithGrade"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.vo.CourseWithTchName" alias="CourseWithTchName"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.vo.SelCourseWithStuName" alias="SelCourseWithStuName"/>-->
-<!--        <typeAlias type="com.jxd.eduSys.vo.StuWithCollege" alias="StuWithCollege"/>-->
+        <typeAlias type="com.jxd.eduSys.model.Student" alias="Student"/>
+        <typeAlias type="com.jxd.eduSys.model.College" alias="College"/>
+        <typeAlias type="com.jxd.eduSys.model.Course" alias="Course"/>
+        <typeAlias type="com.jxd.eduSys.model.SelectedCourse" alias="SelectedCourse"/>
+        <typeAlias type="com.jxd.eduSys.model.Teacher" alias="Teacher"/>
+        <typeAlias type="com.jxd.eduSys.model.UserLogin" alias="UserLogin"/>
+        <typeAlias type="com.jxd.eduSys.vo.CourseWithGrade" alias="CourseWithGrade"/>
+        <typeAlias type="com.jxd.eduSys.vo.CourseWithTchName" alias="CourseWithTchName"/>
+        <typeAlias type="com.jxd.eduSys.vo.SelCourseWithStuName" alias="SelCourseWithStuName"/>
+        <typeAlias type="com.jxd.eduSys.vo.StuWithCollege" alias="StuWithCollege"/>
     </typeAliases>
 
     <environments default="development">
